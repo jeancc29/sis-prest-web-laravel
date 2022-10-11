@@ -1,0 +1,14 @@
+$c = collect([
+	["id" => 1, "n" => "jean"],
+  ["id" => 2, "n" => "fanola"],
+  ["id" => 3, "n" => "culo"],
+]);
+
+$c->first(fn($d) => $d["id"] == 2);
+$c = collect([
+	["id" => 1, "n" => "jean"],
+  ["id" => 2, "n" => "fanola"],
+  ["id" => 3, "n" => "culo"],
+]);
+
+$c->first(fn($d) => $d["id"] == 5);
